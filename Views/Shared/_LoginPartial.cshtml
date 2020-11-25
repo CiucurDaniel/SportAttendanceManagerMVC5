@@ -1,0 +1,33 @@
+﻿@model SportAttendanceManager.Models.User
+
+@if (Session["idUser"] != null)
+{
+    using (Html.BeginForm("Logout", "Home", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <span class="glyphicon glyphicon-user"></span>
+            @Html.ActionLink("Hello " + Session["FullName"] + "!", "Index", "Home", routeValues: null, htmlAttributes: new { title = "Manage" })
+        </li>
+        <li>
+            <span class="glyphicon glyphicon-off"></span>
+            <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+        </li>
+    </ul>
+    }
+    }
+    else
+    {
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <span class="glyphicon glyphicon-pencil"></span>
+            @Html.ActionLink("Register", "Register", "Home", routeValues: null, htmlAttributes: new { id = "registerLink" })
+        </li>
+        <li>
+            <span class="glyphicon glyphicon-user"></span>
+            @Html.ActionLink("Log in", "Login", "Home", routeValues: null, htmlAttributes: new { id = "loginLink" })
+        </li>
+    </ul>
+    }
