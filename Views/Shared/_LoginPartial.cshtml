@@ -1,25 +1,25 @@
-﻿@model SportAttendanceManager.Models.User
+﻿<!-- model SportAttendanceManager.Models.User The model is not needed here -->
 
 @if (Session["idUser"] != null)
 {
     using (Html.BeginForm("Logout", "Home", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
     {
-    @Html.AntiForgeryToken()
+        @Html.AntiForgeryToken()
 
-    <ul class="nav navbar-nav navbar-right">
-        <li>
-            <span class="glyphicon glyphicon-user"></span>
-            @Html.ActionLink("Hello " + Session["FullName"] + "!", "Index", "Home", routeValues: null, htmlAttributes: new { title = "Manage" })
-        </li>
-        <li>
-            <span class="glyphicon glyphicon-off"></span>
-            <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
-        </li>
-    </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <span class="glyphicon glyphicon-user"></span>
+                @Html.ActionLink("Hello " + Session["FullName"] + "!", "Index", "Home", routeValues: null, htmlAttributes: new { title = "Manage" })
+            </li>
+            <li>
+                <span class="glyphicon glyphicon-off"></span>
+                <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+            </li>
+        </ul>
     }
-    }
-    else
-    {
+}
+else
+{
     <ul class="nav navbar-nav navbar-right">
         <li>
             <span class="glyphicon glyphicon-pencil"></span>
@@ -30,4 +30,4 @@
             @Html.ActionLink("Log in", "Login", "Home", routeValues: null, htmlAttributes: new { id = "loginLink" })
         </li>
     </ul>
-    }
+}

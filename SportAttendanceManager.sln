@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportAttendanceManager", "SportAttendanceManager.csproj", "{2705E644-8B55-4DB3-A8E7-B8099FE60A03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportAttendanceManager.Web", "SportAttendanceManager.Web.csproj", "{2705E644-8B55-4DB3-A8E7-B8099FE60A03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportAttendanceManager.Data", "..\SportAttendanceManager.Data\SportAttendanceManager.Data.csproj", "{A03FB397-3A68-48E0-BDC1-B0562B8C9335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportAttendanceManager.Entities", "..\SportAttendanceManager.Entities\SportAttendanceManager.Entities.csproj", "{F1E49BE7-CF71-431E-B2E2-956E1960A5AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{2705E644-8B55-4DB3-A8E7-B8099FE60A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2705E644-8B55-4DB3-A8E7-B8099FE60A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2705E644-8B55-4DB3-A8E7-B8099FE60A03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A03FB397-3A68-48E0-BDC1-B0562B8C9335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03FB397-3A68-48E0-BDC1-B0562B8C9335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03FB397-3A68-48E0-BDC1-B0562B8C9335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03FB397-3A68-48E0-BDC1-B0562B8C9335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1E49BE7-CF71-431E-B2E2-956E1960A5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E49BE7-CF71-431E-B2E2-956E1960A5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E49BE7-CF71-431E-B2E2-956E1960A5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E49BE7-CF71-431E-B2E2-956E1960A5AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
